@@ -1,0 +1,239 @@
+.form-title {
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 70px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 37px;
+}
+.form {
+  color: #fff;
+  padding: 80px 0;
+}
+.numbers {
+  background-color: #9e92a8;
+  width: 25px;
+  height: 25px;
+  border-radius: 12px;
+  color: #42344d;
+}
+.numbers > span{
+  padding-left: 7px;
+}
+.select {
+  width: 400px;
+  padding: 0 20px;
+  height: 50px;
+  border-radius: 50px;
+  background: rgba(185 174 193 / 35%);
+  color: #fff;
+  outline: none;
+}
+.react-datepicker__year-wrapper { justify-content: space-between}
+.react-datepicker__month-text,
+.react-datepicker__year-text{ padding: 8px 0}
+.select:focus-visible {
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.dob {
+  display: block;
+}
+.title {
+  font-weight: inherit;
+  font-size: x-large;
+  margin: 0 0 16px;
+  display: block;
+}
+.select option {
+ width: 20px;
+  color: #000;
+}
+:focus-visible {
+  outline: -webkit-focus-ring-color auto 0;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 575px;
+}
+
+.flex-container > div {
+  font-size: 21px;
+}
+.flex-container label {
+  display: block;
+  margin: 0 0 6px;
+}
+.flex-container input {
+  background: rgba(185 174 193 / 35%);
+  border-radius: 100px;
+  border: none;
+  height: 45px;
+  color: #fff;
+  padding-left: 20px;
+  outline: none;
+}
+.react-datepicker-wrapper input:focus-visible { box-shadow: 0 0 20px rgba(0,0,0,0.3)}
+.flex-performance {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 550px;
+  margin: 0 auto;
+}
+.flex-performance > div{
+  border-radius: 100px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin: 30px 0 0px;
+}
+.flex-performance > div > button {
+  background: rgba(185 174 193 / 35%);
+  height: 60px;
+  width: 60px;
+  display: flex;
+  border-radius: 45px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  border: none;
+  color: #42344d;
+  font-size: x-large;
+  font-weight: bold;
+}
+::placeholder {
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  color:#fff;
+}
+
+::-ms-input-placeholder {
+  color: #fff;
+}
+h3, h2 {
+  font-weight: 400;
+}
+.selected-button {
+  color: black;
+  background-color: #fff !important;
+}
+.textarea {
+  background: rgba(185 174 193 / 35%);
+  border-radius: 15px;
+  color: #fff;
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 100%;
+  font-size: 18px;
+  border: none;
+}
+.center {
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+}
+.form-wrapper {
+  width: 100%;
+}
+.row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-12 {
+  padding: 0 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.col-4 {
+  padding: 0 15px;
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+  margin-bottom: 30px;
+}
+.react-datepicker-wrapper input {
+  background-color: rgba(185 174 193 / 35%);
+  border-radius: 50px;
+  border: none;
+  height: 50px;
+  color: #ffffff;
+  padding-left: 20px;
+  width: 100%;
+  font-size: 18px;
+  transition: all 0.4s ease-in-out;
+}
+h3 {
+  display: block;
+  margin: 0 0 20px;
+  font-size: 26px;
+}
+label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 15px;
+}
+.submit-btn {
+  background-color: rgba(0,0,0,0.6);
+  color: #ffffff;
+  height: 50px;
+  padding: 0 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+.submit-btn:hover {
+  background-color: #ffffff;
+  color: rgba(50 35 62 / 92%);
+}
+.activities {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.activities li {
+  list-style: none;
+  position: relative;
+}
+.activities input{
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.activities label {
+  background-color: rgba(185 174 193 / 35%);
+  max-width: 500px;
+  font-size: 20px;
+  height: 55px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.activities label span {
+  background-color: rgba(50 35 62 / 100%);
+  display: inline-block;
+  padding: 3px 7px 5px;
+  line-height: 1;
+  border-radius: 5px;
+  font-size: 17px;
+  margin-right: 12px;
+  color: #ffffff;
+}
+.error {
+  color: #c00926;
+}
+.activities input:checked ~ label  { background-color: #fff; color: rgba(50 35 62 / 92%) }
