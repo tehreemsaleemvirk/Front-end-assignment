@@ -3,10 +3,9 @@ import DatePicker from "react-datepicker";
 import { useState} from "react";
 import {useForm, Controller} from "react-hook-form";
 import "react-datepicker/dist/react-datepicker.css";
-import {MAXIMUM_DATE, MINIMUM_DATE, PERFORMANCE_RATE, TITLES} from "../constants/constant";
-import Icon from "./Icon";
+import {MAXIMUM_DATE, MINIMUM_DATE, PERFORMANCE_RATE, TITLES} from "../../constants/constant";
+import Icon from "../icon/Icon";
 import ReactTooltip from "react-tooltip";
-// import DobDatePicker from "./DobDatePicker";
 
 function Form() {
     const { register, handleSubmit, control, formState: {errors} } = useForm();
@@ -32,7 +31,6 @@ function Form() {
 
     const submitForm = (data) => {
         let DOB = {}
-        console.log("data", data)
         if(data.day && data.month && data.year) {
             DOB = createDobObject(data)
         }
@@ -50,9 +48,9 @@ function Form() {
                             {...register("title")}
                             className="select"
                             id="select">
-                            {TITLES.map((value, index) => {
-                                return <option key={`title${index}`} value={value}>{value}</option>
-                            })}
+                            {TITLES.map((value, index) =>
+                                <option key={`title${index}`} value={value}>{value}</option>
+                            )}
                         </select>
                     </div>
                     <div className="col-12">
@@ -80,7 +78,6 @@ function Form() {
                                         />
                                     )}
                                 />
-                                {/*<DobDatePicker dateFormat="dd" name="day" />*/}
                             </div>
                             <div className="col-4">
                                 <label htmlFor="month">Month</label>
